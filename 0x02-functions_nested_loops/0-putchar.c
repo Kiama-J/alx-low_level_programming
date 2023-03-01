@@ -14,7 +14,7 @@ char print_char(void);
 /**
  * main - Entry point
  * Description: calls print_char()
- * Return (0)
+ * Return: 0
  */
 
 int main(void)
