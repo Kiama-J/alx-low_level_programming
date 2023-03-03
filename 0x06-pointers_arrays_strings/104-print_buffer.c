@@ -10,9 +10,9 @@
 
 void print_buffer(char *b, int size)
 {
-		int j, k, l;
+	int j, k, l;
 
-		if (size <= 0)
+	if (size <= 0)
 		printf("\n");
 	else
 	{
@@ -22,23 +22,23 @@ void print_buffer(char *b, int size)
 			for (k = j; k < j + 10; k++)
 			{
 				if (k % 2 == 0)
-				printf(" ");
+					printf(" ");
 				if (k < size)
-				printf("%.2x", *(b + k));
+					printf("%.2x", *(b + k));
 				else
-				printf("  ");
+					printf("  ");
 			}
-			printf(" ");
-		for (l = j; l < j + 10; l++)
-			{
+					printf(" ");
+				for (l = j; l < j + 10; l++)
+				{
 					if (l >= size)
-					break;
+						break;
 					if (*(b + l) < 32 || *(b + l) > 126)
-					printf("%c", '.');
-				else
-				printf("%c", *(b + l));
-			}
-			printf("\n");
+						printf("%c", '.');
+					else
+						printf("%c", *(b + l));
+				}
+						printf("\n");
 		}
 	}
 }
