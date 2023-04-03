@@ -17,7 +17,8 @@ int main(void)
 /**
  * _strlen_recursion - definition of function
  * @s: the string to measure
- * Description: finds length of a string using recursion
+ * Description: finds length of a string
+ * using recursion
  * Return: the string length
  */
 
